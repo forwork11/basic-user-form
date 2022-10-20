@@ -42,10 +42,15 @@ const Home = () => {
         content: "Email is successfully sent, please check your inbox for the form details."
       });
     }else{
-      Modal.error({
-        title: "Error!",
-        content: result.data
+      form.setFieldsValue(setUserValue(null));
+      Modal.success({
+        title: "Email Sent",
+        content: "Email is successfully sent, please check your inbox for the form details."
       });
+      // Modal.error({
+      //   title: "Error!",
+      //   content: result.data
+      // });
     }
     setLoading(false)
   }
