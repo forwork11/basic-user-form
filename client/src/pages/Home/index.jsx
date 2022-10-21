@@ -52,6 +52,7 @@ const Home = () => {
       //   content: result.data
       // });
     }
+    handleFormChange();
     setLoading(false)
   }
 
